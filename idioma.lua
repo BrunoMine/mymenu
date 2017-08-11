@@ -41,7 +41,7 @@ end
 -- Acessar menu de seleção de idiomas
 local acessar_menu_idiomas = function(player)
 	local name = player:get_player_name()
-	local lang = getlang(name)
+	local lang = getlang(name) or "en" -- não pode ser nulo
 	
 	-- Idioma selecionado
 	local idioma_sel = "1"
