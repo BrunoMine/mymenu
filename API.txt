@@ -1,0 +1,25 @@
+API para mod MyMenu v1.0.0
+
+
+### Métodos Básicos
+* `mymenu.register_button(field, label)` : Registrar um botao na aba Config do menu
+	
+* `mymenu.register_tr(func)` : Metodo de tradução instantanea cujos argumentos são `(lang_code, string)` 
+
+### Exemplo de código
+
+```lua
+-- Registrar metodo de tradução instantanea
+mymenu.register_tr(function(lang, string) return string end)
+
+-- Registrar botao
+mymenu.register_button("mymenu:abrir_menu", "Idioma")
+
+-- Receber botao do inventario
+minetest.register_on_player_receive_fields(function(player, formname, fields)
+	if fields["mymenu:abrir_menu"] then
+		acessar_menu_idiomas(player)
+	end
+end)
+```
+
