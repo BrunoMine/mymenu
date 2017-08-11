@@ -6,7 +6,8 @@ Menu pessoal para jogadores em servidores
 
 ## Recursos do projeto
 
-* [API](https://github.com/BrunoMine/oficios/archive/v1.0.0.zip)
+* [Baixar](https://github.com/BrunoMine/oficios/archive/v1.0.0.zip)
+* [API](https://github.com/BrunoMine/mymenu/blob/master/API.txt)
 
 ## Requisitos
 * Minetest 0.4.16 ou superior
