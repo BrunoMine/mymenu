@@ -15,11 +15,15 @@ local S, NS, SS, SNS = dofile(minetest.get_modpath("mymenu").."/lib/intllib.lua"
 -- Algoritimo para pegar idioma com "mylang"
 local getlang, setlang = dofile(minetest.get_modpath(minetest.get_current_modname()).."/lib/mylang.lua")
 
--- Tabela de idiomas selecionaveis
+-- Tabela de idiomas selecionaveis ISO 639
 local tb_idiomas = {
 	["English"] = "en",
 	["Portugues"] = "pt",
 	["Espanol"] = "es",
+	["Italiano"] = "it",
+	["Deutsch"] = "de",
+	["Nederlands"] = "nl",
+	["Français"] = "fr",
 }
 -- Tabela de codigos com o numero
 tb_idiomas_code = {}
@@ -43,18 +47,25 @@ local acessar_menu_idiomas = function(player)
 	local name = player:get_player_name()
 	local lang = getlang(name) or "en" -- não pode ser nulo
 	
+	-- Idioma salvo
+	local idioma_st = ""
+	
 	-- Idioma selecionado
 	local idioma_sel = "1"
-	if lang and tb_idiomas_code[lang] then
-		idioma_sel = tonumber(tb_idiomas_code[lang])
+	if lang then
+		if tb_idiomas_code[lang] then
+			idioma_sel = tonumber(tb_idiomas_code[lang])
+		else
+			-- mostra idioma salvo
+			idioma_st = lang..","
+		end
 	end
-	
 	
 	local formspec = "size[5,5]"
 		..default.gui_bg
 		..default.gui_bg_img
 		.."label[0,0;"..SS(lang, "Escolha seu idioma").."]"
-		.."dropdown[0.125,1;5,5;idioma;"..st_idiomas..";"..(idioma_sel).."]"
+		.."dropdown[0.125,1;5,5;idioma;"..idioma_st..st_idiomas..";"..(idioma_sel).."]"
 		.."button_exit[0,4.3;3,1;voltar;"..SS(lang, "Voltar").."]"
 	
 	minetest.show_formspec(name, "mymenu:idiomas", formspec)

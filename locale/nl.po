@@ -2,17 +2,16 @@
 # Copyright (C) LGPL v3.0
 # This file is distributed under the same license as the MyMenu package.
 # BrunoMine <borgesdossantosbruno@gmail.com>, 2017.
-# BrunoMine <borgesdossantosbruno@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-11 14:38-0300\n"
-"PO-Revision-Date: 2017-08-11 14:39-0300\n"
+"PO-Revision-Date: 2017-08-12 11:55-0300\n"
 "Last-Translator: BrunoMine <borgesdossantosbruno@gmail.com>\n"
 "Language-Team: BrunoMine <borgesdossantosbruno@gmail.com>\n"
-"Language: Portuguese\n"
+"Language: Dutch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,12 +19,12 @@ msgstr ""
 
 #: idioma.lua
 msgid "Escolha seu idioma"
-msgstr "Escolha seu idioma"
+msgstr "Kies uw taal"
 
 #: idioma.lua
 msgid "Voltar"
-msgstr "Voltar"
+msgstr "Back"
 
 #: idioma.lua
 msgid "Idioma"
-msgstr "Idioma"
+msgstr "Taal"

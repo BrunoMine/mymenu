@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2017-08-11 14:39-0300\n"
 "Last-Translator: BrunoMine <borgesdossantosbruno@gmail.com>\n"
 "Language-Team: BrunoMine <borgesdossantosbruno@gmail.com>\n"
-"Language: Portuguese\n"
+"Language: Italian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,12 +20,12 @@ msgstr ""
 
 #: idioma.lua
 msgid "Escolha seu idioma"
-msgstr "Escolha seu idioma"
+msgstr "Scegli la lingua"
 
 #: idioma.lua
 msgid "Voltar"
-msgstr "Voltar"
+msgstr "Indietro"
 
 #: idioma.lua
 msgid "Idioma"
-msgstr "Idioma"
+msgstr "Lingua"
